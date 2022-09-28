@@ -1,0 +1,9 @@
+# ninja log v5
+7	98	6860347577985714	CMakeFiles/1_hackathon.dir/main.cpp.obj	b0c4a498e56e6c1f
+0	443	6860347581425963	CMakeFiles/1_hackathon.dir/FileHandler.cpp.obj	99726e92b8b71d0c
+2	346	6860348322346611	CMakeFiles/1_hackathon.dir/FileHandler.cpp.obj	99726e92b8b71d0c
+8	236	6860349984076827	CMakeFiles/1_hackathon.dir/main.cpp.obj	b0c4a498e56e6c1f
+2	308	6860349984807356	CMakeFiles/1_hackathon.dir/FileHandler.cpp.obj	99726e92b8b71d0c
+2	329	6860351091614387	CMakeFiles/1_hackathon.dir/FileHandler.cpp.obj	99726e92b8b71d0c
+9	333	6860351091650842	CMakeFiles/1_hackathon.dir/main.cpp.obj	b0c4a498e56e6c1f
+333	449	6860351092775333	1_hackathon.exe	b53693371c7a8d28
