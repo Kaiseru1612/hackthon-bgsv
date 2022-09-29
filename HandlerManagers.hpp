@@ -1,6 +1,3 @@
-//  tmplat
-//  Fisheries Integrated Modeling System (FIMS)
-
 //define the header gaurd
 #ifndef handler_manager_hpp 
 #define handler_manager_hpp
