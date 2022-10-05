@@ -8,4 +8,5 @@ include_directories(.)
 add_executable(1_hackathon
         FileHandler.cpp
         FileHandler.h
-        main.cpp)
+        main.cpp
+        HandlerManagers.hpp)

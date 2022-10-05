@@ -7,7 +7,7 @@ using namespace std;
 class Filehandler{
     public:
         void ReadRequirement(std::string filename, int *res){
-	        fstream my_file;
+	        ifstream my_file;
 	        my_file.open(filename, ios::in);
 	        if (!my_file) {
 		    cout << "No such file";
@@ -17,16 +17,17 @@ class Filehandler{
             int idx = 0;
 		    while (1) {
 			    my_file >> ch;
+                res[idx]= ch - '0';
+                idx++;
 			    if (my_file.eof())
 				    break;
-
-                res[idx]= int(ch);
-                idx++;
-			    cout << ch << '\n';
-
 		        }
-
 	        }
 	        my_file.close();
+        }
+        void WriteFile(std::string fname, std::string content){
+            ofstream myfile (fname);
+            myfile << content;
+            myfile.close();
         }
 };
