@@ -1,21 +1,25 @@
-#include "FileHandler.cpp"
-#include <iostream>
+#include "Timer.hpp"
+#include "Handler.hpp"
+#include "HandlerManager.hpp"
+#include "Reader.hpp"
+#include "SystemChecker.hpp"
+#include "Writer.hpp"
+#include <unistd.h>
 
-int main(){
-    Filehandler filereader;
-    int* a = new int[100];
-    for (int i = 0; i < 100; i++) {
-        a[i]=0;
-    }
-    filereader.ReadRequirement("requirement.txt", a);
-    for (int i = 0; i < 7; i++) {
-        cout << a[i] <<'\n';
-    }
-    std::string tmp_res = "";
-    for (int i = 0; i < 7; i++) {
-        tmp_res += to_string(a[i]) + "\n";
-    }
-    filereader.WriteFile("output.txt", tmp_res);
-    delete[] a;
+int main()
+{
+    Timer ProgramTimer;
+    ProgramTimer.StartTimer();
+
+    /* ------------------ Code here ------------------ */
+    std::cout << "hello"<<std::endl;
+
+
+
+    /* ----------------------------------------------- */
+    ProgramTimer.StopTimer();
+    std::cout<<"Program execute time Micro sec: "<<ProgramTimer.GetInMicroSec()<<std::endl;
+    std::cout<<"Program execute time Milli sec: "<<ProgramTimer.GetInMilliSec()<<std::endl;
+    std::cout<<"Program execute time Sec: "      <<ProgramTimer.GetInSec()<<std::endl;
     return 0;
 }

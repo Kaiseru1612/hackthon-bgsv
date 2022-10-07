@@ -25,9 +25,4 @@ class Filehandler{
 	        }
 	        my_file.close();
         }
-        void WriteFile(std::string fname, std::string content){
-            ofstream myfile (fname);
-            myfile << content;
-            myfile.close();
-        }
 };
